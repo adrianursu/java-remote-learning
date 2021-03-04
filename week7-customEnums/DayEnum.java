@@ -9,5 +9,3 @@ public enum DayEnum {
     FRIDAY,
     SATURDAY;
 }
-
-
