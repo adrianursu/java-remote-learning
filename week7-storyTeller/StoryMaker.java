@@ -6,37 +6,34 @@ public class StoryMaker {
     private static final String[] articles = {"the", "a", "one", "some", "any"};
     private static final String[] nouns = {"boy", "girl", "dog", "town", "car"};
     private static final String[] verbs = {"drove", "jumped", "ran", "walked", "skipped"};
-    private static final String[] prepositions = {"the", "a", "to", "in", "of"};
+    private static final String[] prepositions = {"to", "from", "over", "under", "on"};
 
     private StringBuilder stringBuilder;
+    private Random random;
 
     public StoryMaker() {
         this.stringBuilder = new StringBuilder();
+        this.random = new Random();
     }
 
-    public String createStory() {
-      for(int i = 0; i < 20; i++) {
-          int index1 = new Random().nextInt(5);
-          int index2 = new Random().nextInt(5);
-          int index3 = new Random().nextInt(5);
-          int index4 = new Random().nextInt(5);
-          int index5 = new Random().nextInt(5);
-          int index6 = new Random().nextInt(5);
+    public String getStory() {
+        for (int i = 0; i < 20; i++) {
+            int firstWordIndex = random.nextInt(5);
 
-            stringBuilder.append(Character.toUpperCase(articles[index1].charAt(0)))
-                    .append(articles[index1].substring(1))
+            stringBuilder.append(Character.toUpperCase(articles[firstWordIndex].charAt(0)))
+                    .append(articles[firstWordIndex].substring(1))
                     .append(" ")
-                    .append(nouns[index2])
+                    .append(nouns[random.nextInt(5)])
                     .append(" ")
-                    .append(verbs[index3])
+                    .append(verbs[random.nextInt(5)])
                     .append(" ")
-                    .append(prepositions[index4])
+                    .append(prepositions[random.nextInt(5)])
                     .append(" ")
-                    .append(articles[index5])
+                    .append(articles[random.nextInt(5)])
                     .append(" ")
-                    .append(nouns[index6])
-                    .append(".");
+                    .append(nouns[random.nextInt(5)])
+                    .append(". ");
         }
-        return stringBuilder.toString();
+        return stringBuilder.toString().trim();
     }
 }
