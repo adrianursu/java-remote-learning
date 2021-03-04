@@ -12,10 +12,10 @@ public class StoryMaker {
 
     public String CreateStory() {
       for(int i = 0; i < 20; i++) {
-          int index1 = new Random().nextInt(4);
-          int index2 = new Random().nextInt(4);
-          int index3 = new Random().nextInt(4);
-          int index4 = new Random().nextInt(4);
+          int index1 = new Random().nextInt(5);
+          int index2 = new Random().nextInt(5);
+          int index3 = new Random().nextInt(5);
+          int index4 = new Random().nextInt(5);
 
             stringBuilder.append(Character.toUpperCase(articles[index1].charAt(0)))
                     .append(articles[index1].substring(1))
