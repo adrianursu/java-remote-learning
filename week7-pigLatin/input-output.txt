@@ -1,2 +1,0 @@
-input : "computer monkey the aah aah"
-output: omputercay onkeymay hetay aahay aahay
