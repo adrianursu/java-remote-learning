@@ -19,8 +19,7 @@ public class PigLatin {
                 converter.append(words[i].substring(1))
                         .append(words[i].substring(0, 1));
             }
-            converter.append("ay");
-            converter.append(" ");
+            converter.append("ay ");
         }
         return converter.toString().trim();
     }
