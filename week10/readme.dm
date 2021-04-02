@@ -1,4 +1,4 @@
-# Week 10 - Collections part1
+#Week 10 - Collections part1
 ## Topics covered in this week:
 ### •Arrays vs collection object
 ### •Lists
